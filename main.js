@@ -30,6 +30,35 @@ Try to use both the let and const keywords
 
 //your code here
 
+// String
+const firstName = "Emilie";
+const lastName = "Something";
+
+const fullName = firstName + " " + lastName;
+
+console.log(fullName);
+
+// Number
+let age = 27;
+let birthday = 1;
+
+let newAge = age + birthday;
+
+console.log(newAge);
+
+// Boolean
+let happyBirthday = newAge > age;
+
+if (happyBirthday) {
+  console.log("Happy Birthday");
+} else {
+  console.log("Not your birthday");
+}
+
+// Array
+
+const colors = ["red", "green", "pink", "yellow"];
+
 /****************************************************************************** 
 ASSIGNMENT 3
 
@@ -38,6 +67,29 @@ as well as a few of the shorthand operators (++, --, +=, -=)
 ******************************************************************************/
 
 //your code here
+
+// Math
+console.log(4 + 4);
+console.log(5 - 6);
+console.log(2 * 4);
+console.log(5 / 2);
+
+// More math
+
+let a = 5;
+const b = ++a;
+console.log(a);
+
+let c = 5;
+const d = --c;
+console.log(c);
+
+let e = 5;
+let f = "Hello";
+console.log((e += f));
+
+let g = 5;
+console.log((g -= 3));
 
 /****************************************************************************** 
 ASSIGNMENT 4
@@ -65,6 +117,14 @@ let goToPage = "";
 
 //your code here
 
+if (userName != "" && userAge >= 18 && userIsBlocked === false) {
+  console.log("Welcome");
+  let userIsLoggedIn = true;
+  let goToPage = "/home";
+} else {
+  console.log("Error");
+}
+
 /******************************************************************************
 ASSIGNMENT 5
 
@@ -81,3 +141,13 @@ to see that your conditional is working.
 const userMale = false;
 
 //your code here
+
+const userTitle = "";
+
+if (userMale === true) {
+  let userTitle = "Mr.";
+  console.log(userTitle);
+} else {
+  let userTitle = "Mrs";
+  console.log(userTitle);
+}
